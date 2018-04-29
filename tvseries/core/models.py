@@ -5,6 +5,8 @@ from sqlalchemy.orm import relationship
 
 
 class Responses(db.Model):
+    __tablename__ = 'responses'
+    #__table_args__ = {'schema': 'public'}
     id = db.Column(db.Integer(),
                    nullable=False, unique=True,
                    autoincrement=True, primary_key=True)
@@ -17,7 +19,7 @@ class Responses(db.Model):
     ip_address = db.Column(db.String(50), nullable=False)
     origin_url = db.Column(db.String(250), nullable=True)
 
-    tags = db.Column(db.Integer(), ForeignKey('tag.id'), nullable=True)
+    tags = db.Column(db.Integer(), ForeignKey('tags.id'), nullable=True)
     tag = relationship("Tags")
 
     def __repr__(self):
@@ -41,6 +43,7 @@ class Responses(db.Model):
 
 
 class Tags(db.Model):
+    __tablename__ = 'tags'
     id = db.Column(db.Integer(),
                    nullable=False, unique=True,
                    autoincrement=True, primary_key=True)

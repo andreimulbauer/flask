@@ -1,10 +1,8 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, DateField
+from wtforms import TextField, IntegerField #DateField
 
 
-class TVSerieForm(FlaskForm):
-    name = StringField('name')
-    description = StringField('description')
-    episodies_number = StringField('episodies_number')
-    author = StringField('author')
-    year = DateField('year')
+class ResponsesForm(FlaskForm):
+    score = IntegerField('score')
+    description = TextField('description')
+    campaign_id = IntegerField('campaign_id')

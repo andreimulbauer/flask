@@ -4,7 +4,7 @@ from decouple import config
 
 class BaseConfig(object):
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    SITE_NAME = 'Flask Tutorial'
+    SITE_NAME = 'NPS Platform'
     SECRET_KEY = config('SECRET_KEY')
     SERVER_NAME = config('SERVER_NAME')
     SQLALCHEMY_DATABASE_URI = config('DATABASE_URI')
@@ -21,7 +21,7 @@ class DevelopmentConfig(BaseConfig):
 
 
 class TestConfig(BaseConfig):
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///tvseries-test.sqlite3'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///tvseries.sqlite3'
     TESTING = True
     WTF_CSRF_ENABLED = False
 
