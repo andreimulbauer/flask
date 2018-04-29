@@ -1,19 +1,9 @@
 [![Build Status](https://travis-ci.org/python-sorocaba/flask_tutorial.svg?branch=master)](https://travis-ci.org/python-sorocaba/flask_tutorial)
 
-# Flask Tutorial
-
-This is an educational project to teach Flask to people who already know Python and the basics of how the HTTP protocol works.
-
-## Python intro
-
-See this playlist: https://www.youtube.com/playlist?list=PL6f2gQ2RXLosWiXDHM7vOr1MPdfxPAm_t
-
-## HTTP intro
-
-See this video: https://www.youtube.com/watch?v=WWkJLTMbL9A
+# Flask NPS Platform
+This is an NPS Platform based on flask. It is an educational project that I developed to learn how Flask works.
 
 ## How setup this project?
-
 Create your virtualenv (using python3):
 
 ```
@@ -144,7 +134,6 @@ db.session.commit()
 
 - See release code: https://github.com/rafaelhenrique/flask_tutorial/tree/13.0
 - See explanation about release: https://github.com/rafaelhenrique/flask_tutorial/releases/tag/13.0
-- See videos: 
+- See videos:
 	- https://www.youtube.com/watch?v=ffJ3ia8SZds
 	- https://www.youtube.com/watch?v=5-fUl-_ODhg
-
